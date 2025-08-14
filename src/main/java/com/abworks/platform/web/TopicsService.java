@@ -1,7 +1,7 @@
 package com.abworks.platform.web;
 
-import com.abworks.platform.Message;
-import com.abworks.platform.Topic;
+import com.abworks.platform.domain.Message;
+import com.abworks.platform.domain.Topic;
 import com.abworks.platform.web.repository.TopicsRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

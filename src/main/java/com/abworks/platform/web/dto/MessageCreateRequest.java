@@ -1,4 +1,4 @@
-package com.abworks.platform.web.domain.dto;
+package com.abworks.platform.web.dto;
 
 import jakarta.validation.constraints.NotBlank;
 

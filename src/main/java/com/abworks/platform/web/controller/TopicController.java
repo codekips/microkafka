@@ -1,12 +1,12 @@
 package com.abworks.platform.web.controller;
 
-import com.abworks.platform.web.domain.dto.MessageCreateRequest;
-import com.abworks.platform.web.domain.dto.TopicCreateRequest;
+import com.abworks.platform.web.dto.MessageCreateRequest;
+import com.abworks.platform.web.dto.TopicCreateRequest;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/v1/topics")
-public class TopicsController {
+@RequestMapping("/v1/api/topics")
+public class TopicController {
 
     @PostMapping
     public void createTopic (@RequestBody TopicCreateRequest topicCreateRequest){
@@ -18,6 +18,7 @@ public class TopicsController {
      */
     @GetMapping("/{topicName}/messages")
     public void getMessages(@PathVariable String topicName,
+
                             @RequestParam(required = false, defaultValue = "5") int numberOfMessages) {
 
     }
